@@ -39,12 +39,12 @@ async function sign(value, secret) {
   );
   const sig = await crypto.subtle.sign("HMAC", key, new TextEncoder().encode(value));
   return btoa(String.fromCharCode(...new Uint8Array(sig)))
-    .replace(/=/g, "").replace(/\\+/g, "-").replace(/\\//g, "_");
+    .replace(/=/g, "").replace(/\+/g, "-").replace(/\//g, "_");
 }
 
 async function issueSession(login, secret) {
   const payload = btoa(JSON.stringify({ sub: login, exp: Math.floor(Date.now()/1000) + SESSION_TTL }))
-    .replace(/=/g, "").replace(/\\+/g, "-").replace(/\\//g, "_");
+    .replace(/=/g, "").replace(/\+/g, "-").replace(/\//g, "_");
   return payload + "." + await sign(payload, secret);
 }
 
