@@ -1,0 +1,10 @@
+name = "epok-social-auth"
+main = "worker.js"
+compatibility_date = "2026-11-11"
+
+[[kv_namespaces]]
+binding = "EPOK_DATA"
+id = "REMPLACER_PAR_ID_DU_NAMESPACE_KV"
+
+[vars]
+GITHUB_CLIENT_ID = "REMPLACER_PAR_CLIENT_ID_GITHUB"
