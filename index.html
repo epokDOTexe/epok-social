@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090b10">
+<title>Mon espace — Hub personnel</title>
+<style>
+:root{--bg:#090b10;--panel:#10141d;--panel2:#141a25;--line:#252d3b;--muted:#8d98aa;--text:#edf2fb;--accent:#8b7cff;--cyan:#5bd6d0;--green:#55d69e;--radius:18px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 15% -10%,#222044 0,transparent 34%),radial-gradient(ellipse at 95% 15%,#102d35 0,transparent 26%),var(--bg);color:var(--text);font:15px/1.6 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}
+a{color:inherit;text-decoration:none}.shell{max-width:1120px;margin:auto;padding:28px 24px 70px}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0 28px;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:12px;font-weight:750;letter-spacing:.2px}.logo{width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#4ecac8);display:grid;place-items:center;color:#080a10;font-weight:900;box-shadow:0 7px 25px #786cff40}
+.nav{display:flex;gap:8px;align-items:center}.nav a{color:var(--muted);padding:8px 12px;border-radius:10px;font-size:13px}.nav a:hover{background:var(--panel2);color:var(--text)}
+.hero{padding:54px 0 30px;display:grid;grid-template-columns:1fr auto;gap:28px;align-items:end}.eyebrow{display:flex;align-items:center;gap:9px;color:var(--cyan);font-size:11px;text-transform:uppercase;letter-spacing:1.8px;font-weight:800}.pulse{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px #55d69e18}
+h1{font-size:clamp(34px,5vw,54px);letter-spacing:-2px;line-height:1.08;margin:14px 0 12px}.gradient{background:linear-gradient(90deg,#fff,#a8a0ff 55%,#71dcd3);-webkit-background-clip:text;background-clip:text;color:transparent}
+.intro{max-width:600px;color:var(--muted);font-size:15px;margin:0}.hero-side{display:flex;gap:10px;align-items:center;justify-content:flex-end;flex-wrap:wrap}
+.status{border:1px solid #55d69e42;background:#55d69e0d;color:#77e5b4;padding:9px 12px;border-radius:99px;font-size:12px;font-weight:700;display:flex;align-items:center;gap:8px}
+.section-head{display:flex;justify-content:space-between;align-items:center;margin:28px 0 14px}.section-head h2{font-size:15px;letter-spacing:.2px;margin:0}.section-head span{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:1.2px}
+.social-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.social{display:flex;align-items:center;gap:12px;background:linear-gradient(145deg,#151b27,#10141d);border:1px solid var(--line);padding:15px;border-radius:15px;min-width:0;transition:.2s}.social:hover{transform:translateY(-3px);border-color:#6d65b5}.social-icon{width:38px;height:38px;flex:0 0 38px;border-radius:12px;display:grid;place-items:center;background:#8b7cff20;color:#b5adff;font-weight:800;font-size:13px}.social strong{display:block;font-size:13px}.social small{color:var(--muted);font-size:11px;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.content-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.post{background:linear-gradient(145deg,#141a25,#0f131b);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;min-width:0}.post-body{padding:19px}.post-meta{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:11px;margin-bottom:10px}.tag{padding:4px 8px;border-radius:7px;background:#8b7cff1c;color:#b5adff;font-weight:750;font-size:10px;text-transform:uppercase;letter-spacing:.7px}.post h3{font-size:18px;line-height:1.3;margin:0 0 9px;letter-spacing:-.3px}.post p{color:#aab4c4;margin:0;font-size:13px;white-space:pre-wrap}
+.footer{margin-top:42px;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:#6f7a8d;font-size:11px}
+@media(max-width:760px){.shell{padding:18px 16px 50px}.nav{display:none}.hero{grid-template-columns:1fr;padding-top:38px}.hero-side{justify-content:flex-start}.social-grid{grid-template-columns:repeat(2,1fr)}.content-grid{grid-template-columns:1fr}.footer{gap:12px;flex-direction:column}}
+@media(max-width:390px){.social-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="shell">
+<header class="topbar">
+<a class="brand" href="#"><span class="logo">M</span><span>MON ESPACE<span style="color:var(--muted);font-weight:500"> / HUB</span></span></a>
+<nav class="nav"><a href="#reseaux">Réseaux</a><a href="#publications">Publications</a></nav>
+</header>
+<section class="hero"><div><div class="eyebrow"><span class="pulse"></span> ESPACE PERSONNEL</div><h1>Bienvenue dans<br><span class="gradient">mon univers.</span></h1><p class="intro">Retrouve ici mes réseaux, mes projets et les contenus que j'ai envie de partager.</p></div><div class="hero-side"><div class="status"><span class="pulse"></span> En ligne · Toujours accessible</div></div></section>
+<section id="reseaux"><div class="section-head"><h2>Mes réseaux</h2><span>01 / Liens</span></div><div class="social-grid">
+<a class="social" href="https://instagram.com/" target="_blank" rel="noopener noreferrer"><span class="social-icon">IG</span><span style="min-width:0"><strong>Instagram</strong><small>@monpseudo</small></span><span style="margin-left:auto;color:#768297">↗</span></a>
+<a class="social" href="https://tiktok.com/" target="_blank" rel="noopener noreferrer"><span class="social-icon">TK</span><span style="min-width:0"><strong>TikTok</strong><small>@monpseudo</small></span><span style="margin-left:auto;color:#768297">↗</span></a>
+<a class="social" href="https://youtube.com/" target="_blank" rel="noopener noreferrer"><span class="social-icon">YT</span><span style="min-width:0"><strong>YouTube</strong><small>Ma chaîne</small></span><span style="margin-left:auto;color:#768297">↗</span></a>
+<a class="social" href="https://discord.com/" target="_blank" rel="noopener noreferrer"><span class="social-icon">DS</span><span style="min-width:0"><strong>Discord</strong><small>Rejoins le serveur</small></span><span style="margin-left:auto;color:#768297">↗</span></a>
+</div></section>
+<section id="publications"><div class="section-head"><h2>Dernières publications</h2><span>02 / Contenu</span></div><div class="content-grid">
+<article class="post"><div class="post-body"><div class="post-meta"><span class="tag">BIENVENUE</span><span>Aujourd’hui</span></div><h3>Un espace qui me ressemble</h3><p>Bienvenue sur ma page personnelle. Tu retrouveras ici mes liens importants et les contenus que je souhaite partager.</p></div></article>
+<article class="post"><div class="post-body"><div class="post-meta"><span class="tag">ACTUALITÉ</span><span>À découvrir</span></div><h3>Un nouveau départ</h3><p>Cette page évoluera au fil du temps. Les prochaines publications viendront enrichir cet espace.</p></div></article>
+</div></section>
+<footer class="footer"><span>© 2026 — Mon espace personnel</span><span>Conçu comme un espace à part.</span></footer>
+</div>
+</body>
+</html>
